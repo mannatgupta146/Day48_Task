@@ -1,69 +1,71 @@
 # Day 48 Task | Cohort 2.0
 
-This project is my **Day 47 Task**, where I learned how to **send data from backend to frontend** using a simple mock-backend approach.  
-The data (users, roles, ratings, skills, etc.) is stored inside a **JavaScript array of objects**, and the frontend dynamically renders **freelancer profile cards** using DOM manipulation.
+This project is my **Day 48 Task**, where I built a fully interactive **Virtual Piano** using **HTML, CSS, and JavaScript**.
+The piano responds to both **keyboard presses** and **mouse clicks**, plays actual sound files, highlights keys, and shows which key was pressed.
 
-This task helped me understand the core concept of **how real backend APIs send data to the frontend**, and how the UI displays that data dynamically.
+This task helped me understand **event handling**, **audio control**, **DOM mapping**, and how to simulate real musical instruments using web technologies.
 
-## 🎥 Demo  
+## 🎥 Demo
+
 Here is a quick demo of the project:
 
 ![Demo GIF](./assets/demo.gif)
 
+## 📌 About the Day 48 Task
 
-## 📌 About the Day 47 Task  
+Day 48 focused on creating a realistic **virtual piano**, where I learned how to:
 
-Day 47 focused on practicing **backend → frontend data flow**, including:
+* Map **keyboard keys → piano keys**
+* Play different **audio files** for each key
+* Handle both **keydown** and **click** events
+* Highlight pressed keys dynamically
+* Display the **pressed key** inside the piano
+* Work with **z-index**, **animations**, and **DOM traversal**
+* Use JavaScript objects as **key–sound maps** and **key–div maps**
 
-- Storing structured data in **arrays of objects**
-- Sending data to the UI using **forEach()**
-- Dynamically generating HTML cards
-- Using **template literals** to inject user data
-- Styling modern UI cards using gradients & hover effects
-- Understanding how real apps fetch and render API data
-
-This task mimics how websites display **profiles, posts, products, and user data** from a backend.
-
-
-## ✨ Task Features  
-
-| Feature | Description |
-|--------|-------------|
-| 🧑‍💼 **Dynamic User Cards** | All 8 cards are rendered from JS data (mock backend). |
-| 🔄 **Backend → Frontend Flow** | Data stored in objects is displayed in UI. |
-| 🧩 **Reusable Component Structure** | One HTML template used for all cards. |
-| 🏷️ **Tags & Skills** | Tags come directly from the user object. |
-| ⭐ **Ratings & Earnings** | All values rendered dynamically. |
-| 🎨 **Gradient UI Design** | Soft gradient card background for modern look. |
-| 🎬 **Smooth Hover Animation** | Cards lift gently with shadow. |
-| 📱 **Responsive Layout** | Flexbox-based layout works on all screens. |
+This helped me understand how real digital pianos and music apps detect input and play mapped audio.
 
 
-## 🛠️ Technologies Used  
-- **HTML** – Page structure  
-- **CSS** – Styling, gradients, hover effects  
-- **JavaScript (ES6)** – Data handling, looping, DOM manipulation  
-- **Remix Icons** – Star/rating icons  
-- **VS Code** – Development environment  
+## ✨ Task Features
+
+| Feature                              | Description                                                 |
+| ------------------------------------ | ----------------------------------------------------------- |
+| 🎹 **21 White Keys + 15 Black Keys** | Full interactive piano layout.                              |
+| ⌨️ **Keyboard Input Support**        | Keys like A, S, D, Q, W, E play the piano.                  |
+| 🖱️ **Mouse Click Support**          | Clicking white/black keys plays sound.                      |
+| 🔊 **Mapped Audio System**           | Each key has its own `.mp3` piano note.                     |
+| 💡 **Pressed Key Indicator**         | Shows the pressed keyboard letter inside the key.           |
+| 💭 **Key Highlighting**              | Light-blue flash effect while playing.                      |
+| ⬆️ **Realistic Key Behavior**        | White keys move behind black keys on press (z-index logic). |
+| 🔄 **Reusable Mapping System**       | Uses `sounds{}` + `keyMap{}` for clean logic.               |
+| 🎯 **Accurate Piano Layout**         | Black keys placed exactly like a real piano pattern.        |
+
+## 🛠️ Technologies Used
+
+* **HTML** – Piano structure & keys
+* **CSS** – Styling, positioning, key layout, animations
+* **JavaScript (ES6)** – Event handling, sound mapping, key logic
+* **Audio Files** – 63 different `.mp3` notes
+* **VS Code** – Development environment
 
 
-## 📖 Learning Outcome  
+## 📖 Learning Outcome
 
 By completing this task, I learned:
 
-- How backend-like data is structured using **objects & arrays**
-- How to render UI dynamically with **template literals**
-- How `.forEach()` is used to push backend data to the frontend  
-- How to create reusable components in JavaScript  
-- How modern UI cards are designed using **gradients + transitions**
-- How responsive grids work with **flexbox**
+* How to detect keyboard and mouse events
+* How to attach sounds using the `Audio()` constructor
+* How to map multiple keys using JavaScript objects
+* How DOM traversal works with `.closest()`
+* How to change styles dynamically with JavaScript
+* How z-index layering works in real-world UIs
+* How to build responsive interactive components
 
-This task improved my understanding of **data flow** and **frontend component rendering**.
+This task improved my skills in **JavaScript interaction**, **audio APIs**, and **dynamic UI effects**.
 
+## 🌟 Acknowledgement
 
-## 🌟 Acknowledgement  
-
-This project helped me strengthen my concepts of sending data from backend to frontend and building dynamic UI components.  
-Thank you to **Cohort 2.0** for the continuous learning journey and practical skill-building tasks.
+This Day 48 task helped me understand how interactive applications like **virtual instruments, games, music apps**, and **soundboards** work.
+Thank you to **Cohort 2.0** for helping me learn by building fun and creative projects.
 
 ---
